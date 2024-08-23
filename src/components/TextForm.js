@@ -100,7 +100,7 @@ export default function TextForm(props) {
             rows="9"
           />
         </div>
-        <button className="btn mx-2" 
+        <button className="btn mx-2 my-2" 
                 style={{ 
                   backgroundColor: `var(--button-background-color-${props.mode})`, 
                   color: `var(--button-text-color-${props.mode})`,
@@ -109,7 +109,7 @@ export default function TextForm(props) {
                 onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn mx-2" 
+        <button className="btn mx-2 my-2" 
                 style={{ 
                   backgroundColor: `var(--button-background-color-${props.mode})`, 
                   color: `var(--button-text-color-${props.mode})`,
@@ -118,7 +118,7 @@ export default function TextForm(props) {
                 onClick={handleLowClick}>
           Convert to Lowercase
         </button>
-        <button className="btn mx-2" 
+        <button className="btn mx-2 my-2" 
                 style={{ 
                   backgroundColor: `var(--button-background-color-${props.mode})`, 
                   color: `var(--button-text-color-${props.mode})`,
@@ -127,23 +127,7 @@ export default function TextForm(props) {
                 onClick={handleSpeakClick}>
           Speech
         </button>
-        <button className="btn mx-2" 
-                style={{ 
-                  backgroundColor: `var(--button-background-color-${props.mode})`, 
-                  color: `var(--button-text-color-${props.mode})`,
-                  border: `2px solid ${borderColor}`  // Add border color based on theme
-                }} 
-                onClick={handleClearClick}>
-          Clear Text
-        </button>
-        
-        <input 
-          type="text" 
-          placeholder="Enter replacement text" 
-          value={replacementText} 
-          onChange={handleReplacementTextChange} 
-        />
-        <button className="btn mx-2" 
+        <button className="btn mx-2 my-2" 
                 style={{ 
                   backgroundColor: `var(--button-background-color-${props.mode})`, 
                   color: `var(--button-text-color-${props.mode})`,
@@ -152,14 +136,14 @@ export default function TextForm(props) {
                 onClick={handleReplaceClick}>
           Replace
         </button>
-
+        
         <input 
           type="text" 
-          placeholder="Find word or phrase" 
-          value={searchTerm} 
-          onChange={handleSearchTermChange} 
+          placeholder="Enter replacement text" 
+          value={replacementText} 
+          onChange={handleReplacementTextChange} 
         />
-        <button className="btn mx-2" 
+       <button className="btn mx-2 my-2  " 
                 style={{ 
                   backgroundColor: `var(--button-background-color-${props.mode})`, 
                   color: `var(--button-text-color-${props.mode})`,
@@ -172,6 +156,14 @@ export default function TextForm(props) {
           Find
         </button>
 
+        <input className="" 
+          type="text" 
+          placeholder="Find word or phrase" 
+          value={searchTerm} 
+          onChange={handleSearchTermChange} 
+        />
+       
+
         <button className="btn my-4" 
                 style={{ 
                   backgroundColor: `var(--button-background-color-${props.mode})`, 
@@ -180,6 +172,15 @@ export default function TextForm(props) {
                 }} 
                 onClick={handleRemoveExtraSpaces}>
           Remove Extra Spaces
+        </button>
+        <button className="btn mx-2 my-2" 
+                style={{ 
+                  backgroundColor: `var(--button-background-color-${props.mode})`, 
+                  color: `var(--button-text-color-${props.mode})`,
+                  border: `2px solid ${borderColor}`  // Add border color based on theme
+                }} 
+                onClick={handleClearClick}>
+          Clear Text
         </button>
       </div>
 
