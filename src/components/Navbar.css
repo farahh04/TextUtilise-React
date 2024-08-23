@@ -1,0 +1,23 @@
+/* Specific styling for navbar text color */
+.text-white {
+    color: white !important;
+  }
+  
+  /* Styling for different themes */
+  .navbar-blue {
+    background-color: #1c2769; /* Blue theme background */
+  }
+  
+  .navbar-green {
+    background-color: #1e621e; /* Green theme background */
+  }
+  
+  /* Optionally, you can set default colors for other themes */
+  .navbar-light {
+    background-color: #f8f9fa; /* Light theme background */
+  }
+  
+  .navbar-dark {
+    background-color: #343a40; /* Dark theme background */
+  }
+  
